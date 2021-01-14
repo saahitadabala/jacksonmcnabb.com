@@ -202,3 +202,8 @@ Controls hiding the nav panel time
   height: 100%;
   position: absolute;
 }
+.darkmode-button-position {
+  margin: auto;
+  text-align: center;
+  padding-top: 2em;
+}

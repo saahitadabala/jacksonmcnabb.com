@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { themeLight, themeDark } from "./data/siteColoring";
+
 {
   /*<nav className="nav nav-pills flex-column">*/
 }
@@ -43,6 +45,45 @@ export default class Navbar extends Component {
       if (orderedSectionNames[currentIndex] !== this.state.currentHeading) {
         var currentHeading = orderedSectionNames[currentIndex];
         this.setState({ currentHeading });
+      }
+    });
+    document.getElementById("darkModeButton").addEventListener("click", () => {
+      var isLightMode = !this.state.isLightMode;
+      this.setState({ isLightMode });
+      if (isLightMode) {
+        document.documentElement.style.setProperty(
+          "--app-base",
+          themeLight.appBase
+        );
+        document.documentElement.style.setProperty("--blue", themeLight.blue);
+
+        document.documentElement.style.setProperty("--card", themeLight.card);
+        document.documentElement.style.setProperty(
+          "--section-card",
+          themeLight.sectionCard
+        );
+        document.documentElement.style.setProperty(
+          "--text-color",
+          themeLight.black
+        );
+        document.documentElement.style.setProperty("--nav", themeLight.nav);
+      } else {
+        document.documentElement.style.setProperty(
+          "--app-base",
+          themeDark.appBase
+        );
+        document.documentElement.style.setProperty("--card", themeDark.card);
+        document.documentElement.style.setProperty("--blue", themeDark.blue);
+
+        document.documentElement.style.setProperty(
+          "--section-card",
+          themeDark.sectionCard
+        );
+        document.documentElement.style.setProperty(
+          "--text-color",
+          themeDark.white
+        );
+        document.documentElement.style.setProperty("--nav", themeDark.nav);
       }
     });
 
@@ -153,6 +194,27 @@ export default class Navbar extends Component {
             </ul>
           </div>
         </nav>
+        <div className="darkmode-button-position">
+          <button
+            id="darkModeButton"
+            type="button"
+            className={
+              this.state.isLightMode
+                ? "btn btn-outline-dark"
+                : "btn btn-outline-light"
+            }
+          >
+            {" "}
+            {/* {this.state.isLightMode ? "Light Mode" : "Dark Mode"}{" "} */}
+            <i
+              className={
+                this.state.isLightMode
+                  ? "fas fa-sun dark-mode-button-padding"
+                  : "fas fa-moon dark-mode-button-padding"
+              }
+            ></i>
+          </button>
+        </div>
       </aside>
     );
   }

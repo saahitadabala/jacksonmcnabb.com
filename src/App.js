@@ -2,7 +2,7 @@ import Navbar from "./components/navigation";
 import About from "./components/about";
 import Experience from "./components/experience";
 import Skills from "./components/skills";
-
+import Footer from "./components/footer";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import Research from "./components/research";
@@ -20,6 +20,7 @@ function App() {
         <Experience></Experience>
         <Research></Research>
         <Skills></Skills>
+        <Footer></Footer>
         {/* Add a courses section and maybe area to attach resume */}
       </div>
     </div>
