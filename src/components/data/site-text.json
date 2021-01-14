@@ -1,3 +1,161 @@
 {
-    "About": "I'm a Computer Science and Electrical and Computer Engineering double major junior at Duke University! I'm excited by software engineering and machine learning applications, especially in the medical field. I'm currently taking classes and serving as a teaching assistant for Duke's Advanced Software Design and Implementation course. "
-}
+    "About": "I'm a Computer Science and Electrical and Computer Engineering double major junior at Duke University! I'm excited by software engineering and machine learning applications, especially in the medical field. I'm currently taking classes and serving as a teaching assistant for Duke's Advanced Software Design and Implementation course. ",
+    "Research Description": "I am interested in answering interdisciplinary research questions particularly how to leverage emerging technologies and machine learning to enhance hospital software infrastructure and the point of care.",
+    "Research Papers": [
+      {
+        "title": "Pending Review!",
+        "affiliation": "Duke University Center for Water, Sanitation, Hygiene and Infectious Disease",
+        "conference": "Conference on Computer Vision and Pattern Recognition",
+        "date": "2021",
+        "file": "washaid.png",
+        "url": "/#",
+        "authors": ""
+        
+      },
+      {
+        "title": "Implementation of Artificial Intelligence-Enabled Clinical Decision Support: A Systematic Review of Clinical Outcomes",
+        "conference": "American Medical Informatics Association",
+        "affiliation": "IBM Watson Health and Vanderbilt University Department of Biomedical Informatics",
+        "date": "2020",
+        "file": "ibm.png",
+        "url": "https://knowledge.amia.org/71623-amia-1.4589302/t0005-1.4590480/t0005-1.4590481/a213-1.4590659/an213-1.4590660?timeStamp=1609621990797",
+        "authors": "McNabb et al."
+  
+  
+      },
+      {
+        "title": "Barriers and Facilitators to Adoption of Artificial Intelligence-Based Clinical Decision Support: Preliminary Findings of a Systematic Review",
+        "conference": "American Medical Informatics Association",
+        "affiliation": "IBM Watson Health and Vanderbilt University Department of Biomedical Informatics",
+        "date": "2020",
+        "file": "ibm.png",
+        "url": "https://knowledge.amia.org/71623-amia-1.4589302/t0005-1.4590480/t0005-1.4590481/a260-1.4590518/an260-1.4590519",
+        "authors": "Wan, McNabb et al."
+  
+      }
+    ],
+    "Experience Description Part 1": "In addition to professional software experience with ",
+    "Experience Description Part 2": ", I've pursued collaborative, fast-paced, and interdisciplinary academic software projects for both academia and industry.",
+  
+    "Professional Experience": [
+      {
+        "company": "GE Healthcare",
+        "location": "Remote",
+        "title": "Software Engineering Intern",
+        "description": "I designed and implemented a Python-enabled web tool for internal data processing and pipeline integration/management for medical device reliability data with an international, cross-functional Agile team.",
+        "date": "July 2020 - August 2020"
+      },
+      {
+        "company": "IBM Watson Health",
+        "location": "Nashville, TN",
+        "title": "Biomedical Informatics, Software Engineering Intern",
+        "description": "I collaborated on multiple machine learning (PyTorch/TensorFlow) applications in biomedical informatics projects with Vanderbilt University Medical Center clinical, administrative, and cloud infrastructure.",
+        "date": "May 2019 - August 2019"
+      }
+    ],
+    "Selected Academic Projects": [
+      {
+        "company": "Duke University Center for Water, Sanitation, Hygiene, and Infectious Disease",
+        "location": "Durham, NC",
+        "title": "Project Software Engineer",
+        "description": "I engineered and prototyped a smart human waste screening system leveraging bioanalytics for intelligent diagnosis and prevention of gastrointestinal disease for market usage. Specifically, I designed, trained, and deployed neural networks (PyTorch) for predictive image and diagnostic classification for live stool samples.",
+        "date": "August 2019 - Present"
+      },
+      {
+        "company": "Duke University School of Medicine Division of Brain Stimulation and Neurophysiology",
+        "location": "Durham, NC",
+        "title": "Research Project Engineer",
+        "description": "I assisted in the designing and prototyping of a controllable pulse parameter transcranial magnetic stimulation device with the Division of Brain Stimulation and Neurophysiology by developing electrical hardware and software with MATLAB.",
+        "date": "September 2019 - March 2020"
+      },
+      {
+        "company": "Duke University Hospital",
+        "location": "Durham, NC",
+        "title": "Research Project Engineer",
+        "description": "I optimized use of Arduino, circuitry, and bioanalytical material science and employed engineering design to develop an automated pneumatic capsule opener for Duke University Hospital infrastructure and Ergonomics Division. I also had the opportunity to collaborate with Duke professors, Duke University Hospital and Ergonomics Division staff, and peer engineers to pitch our prototyped solution to Duke University faculty and clients.",
+        "date": "September 2018 - May 2019"
+      }
+    ],
+  
+    "Languages": [
+        {
+          "name": "Python",
+          "file": "python.png"
+        },
+        {
+          "name": "Java",
+          "file": "java.png"
+        },
+        {
+          "name": "C",
+          "file": "cprogramming.png"
+        },
+        {
+          "name": "C++",
+          "file": "cplusplus.png"
+        },
+        {
+          "name": "Javascript",
+          "file": "javascript.png"
+        },
+        {
+          "name": "MATLAB",
+          "file": "matlab.png"
+        }
+  
+      ],
+      "Libraries": [
+        {
+          "name": "Pandas",
+          "file": "pandas.png"
+        },
+        {
+          "name": "PyTorch",
+          "file": "pytorch.png"
+        },
+        {
+          "name": "scikit-learn",
+          "file": "scikit-learn.png"
+        },
+        {
+          "name": "Tensorflow",
+          "file": "tensorflow.png"
+        },
+        {
+          "name": "NumPy",
+          "file": "numpy.png"
+        }
+      ],
+      "Web Development": [
+        {
+          "name": "React.js",
+          "file": "react.png"
+        },
+        {
+          "name": "Node.js",
+          "file": "node.png"
+        },
+        {
+          "name": "CSS",
+          "file": "css.png"
+        }
+      ],
+      "Other": [
+        {
+          "name": "Git",
+          "file": "git.png"
+        },
+        {
+          "name": "Linux",
+          "file": "linux.png"
+        },
+        {
+          "name": "Jenkins",
+          "file": "jenkins.png"
+        },
+        {
+          "name": "REST API",
+          "file": "restapi.png"
+        }
+      ]
+    }
