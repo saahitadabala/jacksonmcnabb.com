@@ -1,0 +1,51 @@
+/* =======================================================
+Css Styling for site.
+Overall Color Scheme:
+  --blue: #1357af;
+  --card: #d3d3d3;
+  --section-card: #b3b3b3;
+  --app-base: #dadada;
+  --text-color: black;
+  --nav: #b9b9b9;
+
+* ======================================================= */
+
+:root {
+  --blue: #1357af;
+  --card: #d3d3d3;
+  --section-card: #b3b3b3;
+  --app-base: #dadada;
+  --text-color: black;
+  --nav: #b9b9b9;
+}
+#app-container {
+  transition: 1s;
+  margin: 0 auto;
+}
+#main-container {
+  width: calc(100% - 300px);
+  padding: 0 0;
+  float: right;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  color: var(--text-color);
+}
+
+.base-section {
+  text-align: center;
+}
+.section-body {
+  font-size: 16pt;
+  font-weight: 400;
+}
+.app-base {
+  transition: 1s ease;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--app-base);
+}
+.padded {
+  padding: 10em;
+}

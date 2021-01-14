@@ -1,0 +1,204 @@
+/*
+Controls hiding the nav panel time
+*/
+#nav-aside-base {
+  padding-top: 2.25em;
+  float: right;
+  width: 300px;
+  /*Change in container base when changed ^*/
+  position: fixed;
+  overflow: hidden;
+  z-index: 2;
+  background: var(--nav);
+  transition: 1s;
+}
+
+/*
+    Shrink
+*/
+@media screen and (max-width: 768px) {
+  #nav-aside-base {
+    width: 300px;
+    transform: translateX(-300px);
+    padding-top: 4em;
+  }
+}
+.nav-text {
+  text-align: center;
+}
+/*
+    Nav Title, first element
+  */
+.nav-title-expand-container {
+  position: relative;
+  margin-top: -1px;
+  margin-left: -1px;
+  border: 10px;
+  float: center;
+}
+.nav-titling {
+  position: relative;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 26pt;
+}
+
+.nav-titling a {
+  position: relative;
+  display: block;
+  text-align: center;
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  padding-top: 0.5em;
+}
+/* Reserve space so that it doesn't shift elements*/
+/* .nav-titling a::before {
+    display: block;
+    content: attr(data-text);
+    font-size: 29pt;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+  } */
+
+.nav-titling a:link {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.nav-titling a:visited {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.nav-titling a:hover {
+  text-decoration: none;
+  color: var(--blue);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+}
+.nav-titling a:active {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* Animation for underlining (navbar-base)*/
+#nav-aside-base #navbar-base {
+  display: block;
+  width: 100%;
+  margin-top: 3em;
+}
+
+#nav-aside-base #navbar-base ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 768px) {
+  #nav-aside-base #navbar-base ul {
+    margin: 0 0 2em 0;
+  }
+}
+#nav-aside-base #navbar-base ul li {
+  margin: 0 0 2em 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12pt;
+  font-weight: 400;
+  width: 100%;
+  letter-spacing: 2px;
+}
+#nav-aside-base #navbar-base ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  position: relative;
+  padding: 8px 6px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+/* Underlining event*/
+#nav-aside-base #navbar-base ul li a:after {
+  position: absolute;
+  height: 1px;
+  bottom: 6px;
+  left: 0;
+  right: 0;
+  background-color: var(--blue);
+  visibility: hidden;
+  content: "     ";
+  transform: scaleX(0);
+  transition: all 1s cubic-bezier(0.2, 1, 0.3, 1.3);
+}
+#nav-aside-base #navbar-base ul li a:hover {
+  text-decoration: none;
+  color: var(--blue);
+}
+#nav-aside-base #navbar-base ul li a:hover:after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+#nav-aside-base #navbar-base ul li.active a {
+  color: var(--blue);
+  font-size: 14pt;
+}
+#nav-aside-base #navbar-base ul li.active a:after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+#nav-aside-base #navbar-base ul li.active a:after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/* My socials */
+
+#nav-aside-base #socials-nav {
+  width: 300px;
+  color: var(--text-color);
+  font-size: 15pt;
+  margin-bottom: 3em;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#nav-aside-base #socials-nav a {
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+#nav-aside-base #socials-nav a:link {
+  text-decoration: none;
+  color: var(--text-color);
+}
+#nav-aside-base #socials-nav a:visited {
+  text-decoration: none;
+  color: var(--text-color);
+}
+#nav-aside-base #socials-nav a:hover {
+  text-decoration: none;
+  color: var(--blue);
+  opacity: 100%;
+  transform: scale(1.2);
+}
+#nav-aside-base #socials-nav a::after {
+  transition: 0.3s ease-in-out;
+}
+.mail-icon {
+  left: 10%;
+}
+.github-icon {
+  left: 36.67%;
+}
+.linkedin-icon {
+  left: 63.33%;
+}
+.instagram-icon {
+  right: 10%;
+}
+
+.max-height {
+  height: 100%;
+  position: absolute;
+}
