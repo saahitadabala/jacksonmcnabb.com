@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faHeart } from "@fortawesome/free-solid-svg-icons";
 import { themeLight, themeDark } from "./data/siteColoring";
-
 {
   /*<nav className="nav nav-pills flex-column">*/
 }
@@ -34,8 +33,10 @@ export default class Navbar extends Component {
         clientHeights[i - 1];
     }
     document.addEventListener("scroll", () => {
+      /*TODO: more intuitive indexing; instead of number index id*/
+
       var currentIndex = 1;
-      const offset = 20;
+      const offset = 80;
       while (1) {
         if (window.scrollY < clientHeights[currentIndex] - offset) {
           break;

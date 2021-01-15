@@ -1,0 +1,15 @@
+.header-image-container {
+  text-align: center;
+}
+.header-image {
+  height: 35vh;
+  margin-top: 1em;
+  margin-bottom: 0.1em;
+}
+.title-wrapper {
+  width: 100%;
+  color: var(--text-color);
+}
+.align-right {
+  text-align: right;
+}

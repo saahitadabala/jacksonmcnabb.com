@@ -1,11 +1,14 @@
 import Navbar from "./components/navigation";
+import Heading from "./components/heading";
 import About from "./components/about";
 import Experience from "./components/experience";
+import Research from "./components/research";
 import Skills from "./components/skills";
 import Footer from "./components/footer";
-import { fab } from "@fortawesome/free-brands-svg-icons";
+
 import { library } from "@fortawesome/fontawesome-svg-core";
-import Research from "./components/research";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import Fade from "react-reveal/Fade";
 
 /* Adds brand icons for nav bar */
 library.add(fab);
@@ -16,12 +19,21 @@ function App() {
     <div className="app-base" id="app-container">
       <Navbar></Navbar>
       <div id="main-container">
-        <About></About>
-        <Experience></Experience>
-        <Research></Research>
+        {/* Add a courses section and maybe area to attach resume */}
+        <Fade top>
+          <Heading></Heading>
+        </Fade>
+        <Fade bottom delay={1000}>
+          <About></About>
+        </Fade>
+        <Fade bottom delay={2000}>
+          <Experience></Experience>{" "}
+        </Fade>
+        <Fade bottom>
+          <Research></Research>
+        </Fade>
         <Skills></Skills>
         <Footer></Footer>
-        {/* Add a courses section and maybe area to attach resume */}
       </div>
     </div>
   );

@@ -1,14 +1,26 @@
 /* =======================================================
 Css Styling for site.
 Overall Color Scheme:
-  --blue: #1357af;
-  --card: #d3d3d3;
-  --section-card: #b3b3b3;
-  --app-base: #dadada;
-  --text-color: black;
-  --nav: #b9b9b9;
+000000 (black)
+14213d (dark blue)
+1357af (lighter blue)
+fca311 (gold)
+e5e5e5 (light gray)
+ffffff (gray)
 
+Another Dark blue oriented one:
+#003D7A Midnight Blue
+#051537 Dark Blue
+#04247C Navy Blue
+#0458AB Blue
 * ======================================================= */
+
+.experience-subsection {
+  font-size: 20pt;
+}
+/*
+Research fade in when scrolling
+*/
 
 :root {
   --blue: #1357af;
@@ -18,10 +30,79 @@ Overall Color Scheme:
   --text-color: black;
   --nav: #b9b9b9;
 }
-#app-container {
-  transition: 1s;
-  margin: 0 auto;
+/*
+Research Css
+*/
+
+.card-coloring-left {
+  margin-top: 0.4em;
+  background: var(--card);
+  width: 90%;
+  text-align: left;
+  transition: all 0.4s ease-in-out;
+  text-decoration: none;
+  margin: auto;
+  margin-bottom: 0.5em;
+  color: var(--text-color);
 }
+.card-coloring-right {
+  margin-top: 0.4em;
+  background: var(--card);
+  width: 90%;
+  text-align: right;
+  margin: auto;
+  transition: all 0.4s ease-in-out;
+  text-decoration: none;
+  color: var(--text-color);
+  margin-bottom: 0.5em;
+}
+.research-image-wrapper-left {
+  text-align: right;
+  float: right;
+}
+.research-image-wrapper-right {
+  text-align: left;
+  float: left;
+}
+.research-card:hover {
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.05, 1.05);
+  z-index: 3;
+}
+
+.research-image-active {
+  height: 4.3em;
+  width: 10em;
+  opacity: 100%;
+  transition: all 0.4s ease-in-out;
+}
+.research-image-not-active {
+  height: 4.3em;
+  width: 10em;
+  opacity: 0%;
+  transition: all 0.4s ease-in-out;
+}
+/*
+Footer Css
+*/
+.container-footer {
+  width: 100%;
+}
+.footer {
+  background: var(--card);
+  transition: 1s;
+}
+.footer-text {
+  color: var(--text-color);
+  margin: 0 2em;
+  transition: all 1s;
+}
+
+.max-height {
+  height: 100%;
+  position: absolute;
+}
+
 #main-container {
   width: calc(100% - 300px);
   padding: 0 0;
@@ -29,11 +110,31 @@ Overall Color Scheme:
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
-  color: var(--text-color);
+  color: white;
+}
+
+/*
+Shrink
+*/
+@media screen and (max-width: 768px) {
+  #main-container {
+    width: 100%;
+  }
+}
+
+#app-container {
+  transition: 1s;
+  margin: 0 auto;
 }
 
 .base-section {
   text-align: center;
+}
+.section-header {
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--blue);
+  font-size: 26pt;
 }
 .section-body {
   font-size: 16pt;
@@ -46,11 +147,20 @@ Overall Color Scheme:
   position: relative;
   background-color: var(--app-base);
 }
-.padded {
-  padding: 10em;
+.card-coloring {
+  transition: 1s ease;
+  background: var(--section-card);
+  width: 95%;
+  margin: auto;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  color: var(--text-color);
 }
 
 /* Footer Element */
+.nav-footer-container {
+  transition: 1s;
+}
 .footer {
   /* width: 100%; */
   color: var(--text-color);
@@ -88,35 +198,18 @@ Overall Color Scheme:
 }
 .footer a#love-icon:hover {
   text-decoration: none;
-  transition: 0.5s;
   color: rgb(255, 0, 200);
 }
 .footer a#react-icon:hover {
   text-decoration: none;
-  transition: 0.5s;
-
   color: rgb(0, 183, 255);
 }
 .footer a#project-repo:hover {
   text-decoration: none;
-  transition: 0.5s;
-
   color: #1357af;
 }
-
-/*
-Footer Css
-*/
-.container-footer {
-  width: 100%;
-  transition: 1s;
-}
-.footer {
-  background: var(--card);
-  transition: 1s;
-}
-.footer-text {
-  color: var(--text-color);
-  margin: 0 2em;
-  transition: all 1s;
+.darkmode-button-position {
+  margin: auto;
+  text-align: center;
+  padding-top: 2em;
 }

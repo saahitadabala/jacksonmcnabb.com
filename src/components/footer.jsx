@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faHeart } from "@fortawesome/free-solid-svg-icons";
 
 export default class Footer extends Component {
   render() {
@@ -19,11 +19,7 @@ export default class Footer extends Component {
             </a>
             and
             <a id="love-icon">
-              <FontAwesomeIcon
-                icon={faHeart}
-                size="lg"
-                // style={{ transition: ".5s" }}
-              />
+              <FontAwesomeIcon icon={faHeart} size="lg" />
             </a>
             at
             <a

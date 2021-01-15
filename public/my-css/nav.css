@@ -14,7 +14,7 @@ Controls hiding the nav panel time
 }
 
 /*
-    Shrink
+  Shrink
 */
 @media screen and (max-width: 768px) {
   #nav-aside-base {
@@ -27,8 +27,8 @@ Controls hiding the nav panel time
   text-align: center;
 }
 /*
-    Nav Title, first element
-  */
+  Nav Title, first element (Jackson McNabb)
+*/
 .nav-title-expand-container {
   position: relative;
   margin-top: -1px;
@@ -54,13 +54,13 @@ Controls hiding the nav panel time
 }
 /* Reserve space so that it doesn't shift elements*/
 /* .nav-titling a::before {
-    display: block;
-    content: attr(data-text);
-    font-size: 29pt;
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-  } */
+  display: block;
+  content: attr(data-text);
+  font-size: 29pt;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+} */
 
 .nav-titling a:link {
   text-decoration: none;
@@ -196,14 +196,4 @@ Controls hiding the nav panel time
 }
 .instagram-icon {
   right: 10%;
-}
-
-.max-height {
-  height: 100%;
-  position: absolute;
-}
-.darkmode-button-position {
-  margin: auto;
-  text-align: center;
-  padding-top: 2em;
 }
