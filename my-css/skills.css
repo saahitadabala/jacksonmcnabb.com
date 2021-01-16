@@ -1,0 +1,35 @@
+.skill-container {
+  display: flex;
+  justify-content: center;
+}
+
+.skill-container #skill-name {
+  font-size: 14px;
+  margin-top: 0.5em;
+}
+.technicals-list {
+  margin-right: 2em;
+  margin-left: 2em;
+}
+.technical-skill-name-titling {
+  font-size: 16pt;
+  font-weight: lighter;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+}
+.skill-image-active {
+  opacity: 100%;
+  transition: 0.5s;
+}
+.skill-image-notactive {
+  opacity: 55%;
+  transition: 0.5s;
+}
+.skill-title-active {
+  opacity: 100%;
+  transition: 0.5s;
+}
+.skill-title-notactive {
+  opacity: 0%;
+  transition: 0.5s;
+}

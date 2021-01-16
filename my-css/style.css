@@ -1,0 +1,215 @@
+/* =======================================================
+Css Styling for site.
+Overall Color Scheme:
+000000 (black)
+14213d (dark blue)
+1357af (lighter blue)
+fca311 (gold)
+e5e5e5 (light gray)
+ffffff (gray)
+
+Another Dark blue oriented one:
+#003D7A Midnight Blue
+#051537 Dark Blue
+#04247C Navy Blue
+#0458AB Blue
+* ======================================================= */
+
+.experience-subsection {
+  font-size: 20pt;
+}
+/*
+Research fade in when scrolling
+*/
+
+:root {
+  --blue: #1357af;
+  --card: #d3d3d3;
+  --section-card: #b3b3b3;
+  --app-base: #dadada;
+  --text-color: black;
+  --nav: #b9b9b9;
+}
+/*
+Research Css
+*/
+
+.card-coloring-left {
+  margin-top: 0.4em;
+  background: var(--card);
+  width: 90%;
+  text-align: left;
+  transition: all 0.4s ease-in-out;
+  text-decoration: none;
+  margin: auto;
+  margin-bottom: 0.5em;
+  color: var(--text-color);
+}
+.card-coloring-right {
+  margin-top: 0.4em;
+  background: var(--card);
+  width: 90%;
+  text-align: right;
+  margin: auto;
+  transition: all 0.4s ease-in-out;
+  text-decoration: none;
+  color: var(--text-color);
+  margin-bottom: 0.5em;
+}
+.research-image-wrapper-left {
+  text-align: right;
+  float: right;
+}
+.research-image-wrapper-right {
+  text-align: left;
+  float: left;
+}
+.research-card:hover {
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.05, 1.05);
+  z-index: 3;
+}
+
+.research-image-active {
+  height: 4.3em;
+  width: 10em;
+  opacity: 100%;
+  transition: all 0.4s ease-in-out;
+}
+.research-image-not-active {
+  height: 4.3em;
+  width: 10em;
+  opacity: 0%;
+  transition: all 0.4s ease-in-out;
+}
+/*
+Footer Css
+*/
+.container-footer {
+  width: 100%;
+}
+.footer {
+  background: var(--card);
+  transition: 1s;
+}
+.footer-text {
+  color: var(--text-color);
+  margin: 0 2em;
+  transition: all 1s;
+}
+
+.max-height {
+  height: 100%;
+  position: absolute;
+}
+
+#main-container {
+  width: calc(100% - 300px);
+  padding: 0 0;
+  float: right;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  color: white;
+}
+
+/*
+Shrink
+*/
+@media screen and (max-width: 768px) {
+  #main-container {
+    width: 100%;
+  }
+}
+
+#app-container {
+  transition: 1s;
+  margin: 0 auto;
+}
+
+.base-section {
+  text-align: center;
+}
+.section-header {
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--blue);
+  font-size: 26pt;
+}
+.section-body {
+  font-size: 16pt;
+  font-weight: 400;
+}
+.app-base {
+  transition: 1s ease;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--app-base);
+}
+.card-coloring {
+  transition: 1s ease;
+  background: var(--section-card);
+  width: 95%;
+  margin: auto;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  color: var(--text-color);
+}
+
+/* Footer Element */
+.nav-footer-container {
+  transition: 1s;
+}
+.footer {
+  /* width: 100%; */
+  color: var(--text-color);
+  font-size: 12pt;
+  /* margin: 0 auto; */
+  /* text-align: center; */
+  /* position: absolute; */
+  /* bottom: 20px; */
+}
+/* Removes Footer when screen is too small */
+
+/* @media screen and (max-height: 500px) {
+  #nav-aside-base #footer {
+    width: 300px;
+    -moz-transform: translateX(-300px);
+    -webkit-transform: translateX(-300px);
+    -ms-transform: translateX(-300px);
+    -o-transform: translateX(-300px);
+    transform: translateX(-300px);
+    padding-top: 4em;
+  }
+} */
+.footer a {
+  color: var(--text-color);
+  margin: 0.4em;
+  transition: 0.5s;
+}
+.footer a:link {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.footer a:visited {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.footer a#love-icon:hover {
+  text-decoration: none;
+  color: rgb(255, 0, 200);
+}
+.footer a#react-icon:hover {
+  text-decoration: none;
+  color: rgb(0, 183, 255);
+}
+.footer a#project-repo:hover {
+  text-decoration: none;
+  color: #1357af;
+}
+.darkmode-button-position {
+  margin: auto;
+  text-align: center;
+  padding-top: 2em;
+}
