@@ -5,6 +5,8 @@ import { themeLight, themeDark } from "./data/siteColoring";
 {
   /*<nav className="nav nav-pills flex-column">*/
 }
+let siteText = require("./data/site-text.json");
+
 export default class Navbar extends Component {
   constructor(props) {
     super(props);
@@ -113,7 +115,7 @@ export default class Navbar extends Component {
         <div id="socials-nav">
           <a
             className="mail-icon"
-            href="mailto:jacksondmcnabb@gmail.com;jackson.mcnabb@duke.edu"
+            href={"mailto:" + siteText["Email"]}
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -17,3 +17,11 @@ To design the site, I used a simple wireframe before coding, seen here: [Wirefra
 - favicon not in build
 - mobile skill section is off the page for some sizes
 - add card borders?
+- center text and card inside a section
+- maybe don't alternate text
+- distance between child and parent cards should be similar
+- vertical spacing for section headers below
+- add text decoration/different fonts for headers
+- nav pane offset should be reduced (check skills section)
+- add google site visibility; check out api
+- bolding on nav pane jitters when scaled up on some browser versions (smooth flexbox doens't work)
