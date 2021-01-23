@@ -17,7 +17,7 @@ export default class Experience extends Component {
       <Fade bottom>
         <div
           id={xpInfo.company}
-          className=" card research-card card-coloring-left"
+          className=" card research-card card-coloring-left border-primary"
         >
           <div className="card-header">
             {xpInfo.company} | {xpInfo.date}

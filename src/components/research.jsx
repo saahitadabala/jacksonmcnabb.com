@@ -27,7 +27,7 @@ export default class Research extends Component {
         >
           <a
             id={paperInfo.title}
-            className="card research-card card-coloring-left"
+            className="card research-card card-coloring-left border-primary"
             href={paperInfo.url}
             target="_blank"
             rel="noopener noreferrer"
