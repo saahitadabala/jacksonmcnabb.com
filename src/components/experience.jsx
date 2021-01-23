@@ -17,11 +17,7 @@ export default class Experience extends Component {
       <Fade bottom>
         <div
           id={xpInfo.company}
-          className={
-            this.cardParity
-              ? "card research-card card-coloring-left"
-              : "card research-card card-coloring-right"
-          }
+          className=" card research-card card-coloring-left"
         >
           <div className="card-header">
             {xpInfo.company} | {xpInfo.date}

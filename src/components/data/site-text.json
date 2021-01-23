@@ -4,16 +4,6 @@
     "Research Description": "I am interested in answering interdisciplinary research questions particularly how to leverage emerging technologies and machine learning to enhance hospital software infrastructure and the point of care.",
     "Research Papers": [
       {
-        "title": "Pending Review!",
-        "affiliation": "Duke University Center for Water, Sanitation, Hygiene and Infectious Disease",
-        "conference": "Conference on Computer Vision and Pattern Recognition",
-        "date": "2021",
-        "file": "washaid.png",
-        "url": "/#",
-        "authors": ""
-        
-      },
-      {
         "title": "Implementation of Artificial Intelligence-Enabled Clinical Decision Support: A Systematic Review of Clinical Outcomes",
         "conference": "American Medical Informatics Association",
         "affiliation": "IBM Watson Health and Vanderbilt University Department of Biomedical Informatics",

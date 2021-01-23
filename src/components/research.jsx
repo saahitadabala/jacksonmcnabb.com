@@ -27,11 +27,7 @@ export default class Research extends Component {
         >
           <a
             id={paperInfo.title}
-            className={
-              this.cardParity
-                ? "card research-card card-coloring-left"
-                : "card research-card card-coloring-right"
-            }
+            className="card research-card card-coloring-left"
             href={paperInfo.url}
             target="_blank"
             rel="noopener noreferrer"
@@ -44,13 +40,7 @@ export default class Research extends Component {
               <h6 className="card-subtitle mb-2" style={{ opacity: "0.5" }}>
                 {paperInfo.authors}
               </h6>
-              <div
-                className={
-                  this.cardParity
-                    ? "research-image-wrapper-left"
-                    : "research-image-wrapper-right"
-                }
-              >
+              <div className="research-image-wrapper-left">
                 <img
                   className={
                     this.state.selected === numPaper
