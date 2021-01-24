@@ -13,13 +13,8 @@ To design the site, I used a simple wireframe before coding, seen here: [Wirefra
 ![](./public/images/jackson%20website%20wireframe.png)
 ### Todos:
 - fix order of projects by end date or separate professional and academic projects.
-- links on top of sections (done on skills). Add section header styling, like underlining. 
-- favicon not in build
+- Add section header styling, like underlining. 
 - mobile skill section is off the page for some sizes
-- add card borders?
-- distance between child and parent cards should be similar
 - vertical spacing for section headers below
 - add text decoration/different fonts for headers
-- nav pane offset should be reduced (check skills section)
-- add google site visibility; check out api
 - bolding on nav pane jitters when scaled up on some browser versions (smooth flexbox doens't work)

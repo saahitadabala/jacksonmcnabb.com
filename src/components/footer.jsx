@@ -5,7 +5,7 @@ import { faEnvelope, faHeart } from "@fortawesome/free-solid-svg-icons";
 export default class Footer extends Component {
   render() {
     return (
-      <footer className="footer mt-auto py-4">
+      <footer className="footer mt-auto py-4" id="footer">
         <div className="container-footer">
           <span className="footer-text footer">
             Designed and built by Jackson McNabb. Coded with
