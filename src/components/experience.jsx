@@ -50,7 +50,10 @@ export default class Experience extends Component {
         data-target="experience"
         id="experience"
       >
-        <section className="section-header base-section">Experience</section>
+        <section className="section-header base-section">
+          {" "}
+          <span>Experience</span>
+        </section>
         <p className="section-body padded base-section about-section">
           {siteText["Experience Description Part 1"]}
           <a href="#IBM Watson Health">IBM Watson Health</a> and{" "}

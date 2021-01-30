@@ -132,14 +132,39 @@ Shrink
   text-align: center;
 }
 .section-header {
-  text-decoration: none;
+  transition: 1s ease;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
   font-weight: 400;
   color: var(--blue);
   font-size: 26pt;
+  overflow: hidden;
+  text-align: center;
+}
+/* decorate the header with horizontal lines on either side of the text! */
+.section-header > span {
+  position: relative;
+  display: inline-block;
+}
+.section-header > span:before,
+.section-header > span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  border-bottom: 2px solid;
+  width: 100%;
+  margin: 0 20px;
+}
+.section-header > span:before {
+  right: 100%;
+}
+.section-header > span:after {
+  left: 100%;
 }
 .section-body {
   font-size: 16pt;
   font-weight: 400;
+  transition: 1s ease;
 }
 .app-base {
   transition: 1s ease;
@@ -160,7 +185,7 @@ Shrink
 
 /* Footer Element */
 .nav-footer-container {
-  transition: 1s;
+  transition: 1s ease;
 }
 .footer {
   /* width: 100%; */
@@ -187,7 +212,6 @@ Shrink
 .footer a {
   color: var(--text-color);
   margin: 0.4em;
-  transition: 0.5s;
 }
 .footer a:link {
   text-decoration: none;

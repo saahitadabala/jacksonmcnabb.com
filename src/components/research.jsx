@@ -64,7 +64,9 @@ export default class Research extends Component {
     var paperIterator = Array.from(Array(numPapers).keys());
     return (
       <div id="research" className="card card-coloring">
-        <section className="section-header base-section">Research</section>
+        <section className="section-header base-section">
+          <span>Research</span>
+        </section>
         <p className="section-body padded base-section about-section">
           {siteText["Research Description"]}{" "}
         </p>

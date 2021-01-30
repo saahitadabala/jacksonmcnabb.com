@@ -23,7 +23,7 @@ export default class Footer extends Component {
             </a>
             at
             <a
-              href="https://github.com/JacksonMcNabb"
+              href="https://github.com/JacksonMcNabb/jacksonmcnabb.com"
               target="_blank"
               rel="noopener noreferrer"
               id="project-repo"

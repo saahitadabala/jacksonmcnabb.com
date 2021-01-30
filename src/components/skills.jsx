@@ -77,7 +77,9 @@ export default class Skills extends Component {
           id="skills"
           data-section="skills"
         >
-          <div className="section-header">Technical Skills</div>
+          <div className="section-header">
+            <span>Technical Skills</span>
+          </div>
           <div>
             {technicalSkillGroupNames.map((skillGroupName) => {
               var technicalSkills = technicals[skillGroupName];

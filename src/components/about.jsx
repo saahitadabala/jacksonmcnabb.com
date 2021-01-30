@@ -8,10 +8,8 @@ export default class About extends Component {
       <p className="section-body about-section base-section padded" id="about">
         {siteText["About"]}
         <span>
-          <a href="mailto:jacksondmcnabb@gmail.com;jackson.mcnabb@duke.edu">
-            Contact me
-          </a>{" "}
-          about some of my <a href="#experience">projects</a> or{" "}
+          <a href={"mailto:" + siteText["Email"]}>Contact me</a> about some of
+          my <a href="#experience">projects</a> or{" "}
           <a href="#research">research</a>!
         </span>
       </p>
