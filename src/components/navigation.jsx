@@ -167,7 +167,7 @@ export default class Navbar extends Component {
                   this.state.currentHeading === "about" ? "active" : "none"
                 }
               >
-                <a href="#about" data-nav-section="about">
+                <a href="#about" data-nav-section="about" data-text="ABOUT ME">
                   ABOUT ME
                 </a>
               </li>
@@ -176,7 +176,11 @@ export default class Navbar extends Component {
                   this.state.currentHeading === "experience" ? "active" : "none"
                 }
               >
-                <a href="#experience" data-nav-section="experience">
+                <a
+                  href="#experience"
+                  data-nav-section="experience"
+                  data-text="EXPERIENCE"
+                >
                   EXPERIENCE
                 </a>
               </li>
@@ -185,7 +189,11 @@ export default class Navbar extends Component {
                   this.state.currentHeading === "research" ? "active" : "none"
                 }
               >
-                <a href="#research" data-nav-section="research">
+                <a
+                  href="#research"
+                  data-nav-section="research"
+                  data-text="RESEARCH"
+                >
                   RESEARCH
                 </a>
               </li>
@@ -194,7 +202,7 @@ export default class Navbar extends Component {
                   this.state.currentHeading === "skills" ? "active" : "none"
                 }
               >
-                <a href="#skills" data-nav-section="skills">
+                <a href="#skills" data-nav-section="skills" data-text="SKILLS">
                   SKILLS
                 </a>
               </li>

@@ -17,7 +17,7 @@ export default class Experience extends Component {
       <Fade bottom>
         <div
           id={xpInfo.company}
-          className=" card research-card card-coloring-left border-primary"
+          className="card research-card card-coloring-left border-primary"
         >
           <div className="card-header">
             {xpInfo.company} | {xpInfo.date}
@@ -54,7 +54,7 @@ export default class Experience extends Component {
           {" "}
           <span>Experience</span>
         </section>
-        <p className="section-body padded base-section about-section">
+        <p className="section-body base-section about-section">
           {siteText["Experience Description Part 1"]}
           <a href="#IBM Watson Health">IBM Watson Health</a> and{" "}
           <a href="#GE Healthcare">GE Healthcare</a>

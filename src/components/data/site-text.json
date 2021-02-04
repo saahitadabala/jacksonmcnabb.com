@@ -88,10 +88,6 @@
         {
           "name": "Javascript",
           "file": "javascript.png"
-        },
-        {
-          "name": "MATLAB",
-          "file": "matlab.png"
         }
   
       ],
@@ -111,10 +107,6 @@
         {
           "name": "Tensorflow",
           "file": "tensorflow.png"
-        },
-        {
-          "name": "NumPy",
-          "file": "numpy.png"
         }
       ],
       "Web Development": [
