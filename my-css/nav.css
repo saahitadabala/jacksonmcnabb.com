@@ -7,7 +7,8 @@ Controls hiding the nav panel time
   width: 300px;
   /*Change in container base when changed ^*/
   position: fixed;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   z-index: 2;
   background: var(--nav);
   transition: 1s;
@@ -52,16 +53,6 @@ Controls hiding the nav panel time
   overflow: hidden;
   padding-top: 0.5em;
 }
-/* Reserve space so that it doesn't shift elements*/
-/* .nav-titling a::before {
-  display: block;
-  content: attr(data-text);
-  font-size: 29pt;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden;
-} */
-
 .nav-titling a:link {
   text-decoration: none;
   color: var(--text-color);
@@ -103,7 +94,7 @@ Controls hiding the nav panel time
   margin: 0 0 2em 0;
   padding: 0;
   list-style: none;
-  font-size: 12pt;
+  font-size: 14pt;
   font-weight: 400;
   width: 100%;
   letter-spacing: 2px;
@@ -140,8 +131,14 @@ Controls hiding the nav panel time
 }
 #nav-aside-base #navbar-base ul li.active a {
   color: var(--blue);
-  font-size: 14pt;
 }
+/* Reserve space so that it doesn't shift elements*/
+/* #nav-aside-base #navbar-base ul li.active a::before {
+  content: attr(data-text);
+  font-size: 14pt;
+  visibility: hidden;
+} */
+
 #nav-aside-base #navbar-base ul li.active a:after {
   visibility: visible;
   transform: scaleX(1);

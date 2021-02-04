@@ -68,6 +68,7 @@ Research Css
   transition: all 0.4s ease-in-out;
   transform: scale(1.05, 1.05);
   z-index: 3;
+  color: var(--blue);
 }
 
 .research-image-active {
@@ -131,14 +132,41 @@ Shrink
   text-align: center;
 }
 .section-header {
-  text-decoration: none;
+  transition: 1s ease;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
   font-weight: 400;
   color: var(--blue);
   font-size: 26pt;
+  overflow: hidden;
+  text-align: center;
+}
+/* decorate the header with horizontal lines on either side of the text! */
+.section-header > span {
+  position: relative;
+  display: inline-block;
+}
+.section-header > span:before,
+.section-header > span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  border-bottom: 2px solid;
+  width: 100%;
+  margin: 0 20px;
+}
+.section-header > span:before {
+  right: 100%;
+}
+.section-header > span:after {
+  left: 100%;
 }
 .section-body {
   font-size: 16pt;
   font-weight: 400;
+  transition: 1s ease;
+  text-align: center;
+  padding: 0 2em;
 }
 .app-base {
   transition: 1s ease;
@@ -159,7 +187,7 @@ Shrink
 
 /* Footer Element */
 .nav-footer-container {
-  transition: 1s;
+  transition: 1s ease;
 }
 .footer {
   /* width: 100%; */
@@ -170,23 +198,10 @@ Shrink
   /* position: absolute; */
   /* bottom: 20px; */
 }
-/* Removes Footer when screen is too small */
 
-/* @media screen and (max-height: 500px) {
-  #nav-aside-base #footer {
-    width: 300px;
-    -moz-transform: translateX(-300px);
-    -webkit-transform: translateX(-300px);
-    -ms-transform: translateX(-300px);
-    -o-transform: translateX(-300px);
-    transform: translateX(-300px);
-    padding-top: 4em;
-  }
-} */
 .footer a {
   color: var(--text-color);
   margin: 0.4em;
-  transition: 0.5s;
 }
 .footer a:link {
   text-decoration: none;
