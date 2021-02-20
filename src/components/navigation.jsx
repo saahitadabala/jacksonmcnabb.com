@@ -14,12 +14,15 @@ export default class Navbar extends Component {
       currentHeading: "about",
       isLightMode: true,
     };
+    // this.changeHeading = this.changeHeading.bind(this);
   }
-
+  //Idea: get rid of the event listner all together and just have it timer forever;
   componentDidMount() {
     /* Manual Scrollspy Component
     "top" component is now ignored*/
 
+    var currentIndex = this.state.currentHeading;
+    var lastWindowHeight = 0;
     var orderedSectionNames = [
       "top buffer",
       "about",
@@ -27,33 +30,7 @@ export default class Navbar extends Component {
       "research",
       "skills",
     ];
-    var clientHeights = [0];
-    /*Adds consecective heights in easy in clientHeights*/
-    for (var i = 1; i < orderedSectionNames.length; i++) {
-      clientHeights[i] =
-        document.getElementById(orderedSectionNames[i]).clientHeight +
-        clientHeights[i - 1];
-    }
-    // Last case, where the skills section is too small for the scrollspy
-    document.addEventListener("scroll", () => {
-      var currentIndex = 1;
-      const offset = 40;
-      while (1) {
-        if (window.scrollY < clientHeights[currentIndex] - offset) {
-          break;
-        }
-        currentIndex++;
-      }
-      const top = document.getElementById("footer").getBoundingClientRect().top;
-      if (top >= 0 && top <= window.innerHeight) {
-        currentIndex = orderedSectionNames.length - 1;
-      }
 
-      if (orderedSectionNames[currentIndex] !== this.state.currentHeading) {
-        var currentHeading = orderedSectionNames[currentIndex];
-        this.setState({ currentHeading });
-      }
-    });
     document.getElementById("darkModeButton").addEventListener("click", () => {
       var isLightMode = !this.state.isLightMode;
       this.setState({ isLightMode });
@@ -97,6 +74,42 @@ export default class Navbar extends Component {
     // document.addEventListener("click", () => {
 
     // });
+    var changeHeading = () => {
+      var currentWindowHeight = window.scrollY;
+      if (currentWindowHeight != lastWindowHeight) {
+        lastWindowHeight = currentWindowHeight;
+        var clientHeights = [0];
+        /*Adds consecective heights in easy in clientHeights*/
+        for (var i = 1; i < orderedSectionNames.length; i++) {
+          clientHeights[i] =
+            document.getElementById(orderedSectionNames[i]).clientHeight +
+            clientHeights[i - 1];
+        }
+        currentIndex = 1;
+        const offset = 40;
+        while (1) {
+          if (currentWindowHeight < clientHeights[currentIndex] - offset) {
+            break;
+          }
+          currentIndex++;
+        }
+        // Last case, where the skills section is too small for the scrollspy
+        const top = document.getElementById("footer").getBoundingClientRect()
+          .top;
+        if (top >= 0 && top <= window.innerHeight) {
+          currentIndex = orderedSectionNames.length - 1;
+        }
+
+        if (orderedSectionNames[currentIndex] !== this.state.currentHeading) {
+          var currentHeading = orderedSectionNames[currentIndex];
+          this.setState({ currentHeading });
+        }
+      }
+      //recurisively calls function every second to update heading depending on scrolling location
+
+      setTimeout(changeHeading, 500);
+    };
+    changeHeading();
   }
   render() {
     return (
@@ -234,3 +247,80 @@ export default class Navbar extends Component {
     );
   }
 }
+
+// var changeHeading = function () {
+//   var clientHeights = [0];
+//   didClick = true;
+//   /*Adds consecective heights in easy in clientHeights*/
+//   for (var i = 1; i < orderedSectionNames.length; i++) {
+//     clientHeights[i] =
+//       document.getElementById(orderedSectionNames[i]).clientHeight +
+//       clientHeights[i - 1];
+//   }
+//   currentIndex = 1;
+//   const offset = 40;
+//   while (1) {
+//     if (window.scrollY < clientHeights[currentIndex] - offset) {
+//       break;
+//     }
+//     currentIndex++;
+//   }
+//   // Last case, where the skills section is too small for the scrollspy
+//   const top = document.getElementById("footer").getBoundingClientRect().top;
+//   if (top >= 0 && top <= window.innerHeight) {
+//     currentIndex = orderedSectionNames.length - 1;
+//   }
+
+//   if (orderedSectionNames[currentIndex] !== this.currentHeading) {
+//     var currentHeading = orderedSectionNames[currentIndex];
+//     this.currentHeading = currentHeading;
+//   }
+//   didClick = false;
+// };
+// document.addEventListener("click", () => {
+//   setTimeout(changeHeading, 400); //timer for changing the header after click
+// });
+
+// document.addEventListener(
+//   "scroll",
+//   () => {
+//     if (timer !== null) {
+//       clearTimeout(timer);
+//     }
+//     timer = setTimeout(function () {
+//       if (!didClick) {
+//         var clientHeights = [0];
+
+//         /*Adds consecective heights in easy in clientHeights*/
+//         for (var i = 1; i < orderedSectionNames.length; i++) {
+//           clientHeights[i] =
+//             document.getElementById(orderedSectionNames[i]).clientHeight +
+//             clientHeights[i - 1];
+//         }
+//         currentIndex = 1;
+//         const offset = 40;
+//         while (1) {
+//           if (window.scrollY < clientHeights[currentIndex] - offset) {
+//             break;
+//           }
+//           currentIndex++;
+//         }
+//         // Last case, where the skills section is too small for the scrollspy
+//         const top = document
+//           .getElementById("footer")
+//           .getBoundingClientRect().top;
+//         if (top >= 0 && top <= window.innerHeight) {
+//           currentIndex = orderedSectionNames.length - 1;
+//         }
+
+//         // if (orderedSectionNames[currentIndex] !== this.state.currentHeading) {
+//         //   var currentHeading = orderedSectionNames[currentIndex];
+//         //   this.setState({ currentHeading });
+//         // }
+//       }
+//     }, 50);
+//     var currentHeading = orderedSectionNames[currentIndex];
+//     this.setState({ currentHeading });
+//   },
+//   false
+// );

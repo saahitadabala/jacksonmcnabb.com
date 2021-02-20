@@ -71,23 +71,21 @@ export default class Skills extends Component {
       "Other",
     ];
     return (
-      <Fade bottom duration={1500}>
-        <div
-          className="base-section card card-coloring"
-          id="skills"
-          data-section="skills"
-        >
-          <div className="section-header">
-            <span>Technical Skills</span>
-          </div>
-          <div>
-            {technicalSkillGroupNames.map((skillGroupName) => {
-              var technicalSkills = technicals[skillGroupName];
-              return this.constructSkillsList(skillGroupName, technicalSkills);
-            })}
-          </div>
+      <div
+        className="base-section card card-coloring"
+        id="skills"
+        data-section="skills"
+      >
+        <div className="section-header">
+          <span>Technical Skills</span>
         </div>
-      </Fade>
+        <div>
+          {technicalSkillGroupNames.map((skillGroupName) => {
+            var technicalSkills = technicals[skillGroupName];
+            return this.constructSkillsList(skillGroupName, technicalSkills);
+          })}
+        </div>
+      </div>
     );
   }
 }

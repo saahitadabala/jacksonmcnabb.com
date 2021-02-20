@@ -8,8 +8,8 @@
   margin-top: 0.5em;
 }
 .technicals-list {
-  margin-right: 2em;
-  margin-left: 2em;
+  margin-right: 1.5em;
+  margin-left: 1.5em;
 }
 .technical-skill-name-titling {
   font-size: 16pt;
@@ -20,16 +20,32 @@
 .skill-image-active {
   opacity: 100%;
   transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 .skill-image-notactive {
   opacity: 55%;
   transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 .skill-title-active {
   opacity: 100%;
   transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 .skill-title-notactive {
   opacity: 0%;
   transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }

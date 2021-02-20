@@ -32,7 +32,9 @@ function App() {
         <Fade bottom>
           <Research></Research>
         </Fade>
-        <Skills></Skills>
+        <Fade bottom>
+          <Skills></Skills>
+        </Fade>
         <Footer></Footer>
       </div>
     </div>

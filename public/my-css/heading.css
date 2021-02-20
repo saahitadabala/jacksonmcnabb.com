@@ -8,6 +8,10 @@
 }
 .title-wrapper {
   transition: 1s ease;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+  -ms-transition: 1s ease;
+  -o-transition: 1s ease;
   width: 100%;
   color: var(--text-color);
 }
