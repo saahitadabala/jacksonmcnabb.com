@@ -8,11 +8,14 @@
 .about-section a {
   text-decoration: none;
   color: var(--blue);
-  transition: 0.5s;
   font-weight: 500;
   text-decoration: none;
   position: relative;
   transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 .about-section a:after {
   position: absolute;
@@ -24,6 +27,10 @@
   visibility: hidden;
   content: "     ";
   transform: scaleX(0);
+  -webkit-transition: all 1s cubic-bezier(0.2, 1, 0.3, 1.3);
+  -moz-transition: all 1s cubic-bezier(0.2, 1, 0.3, 1.3);
+  -ms-transition: all 1s cubic-bezier(0.2, 1, 0.3, 1.3);
+  -o-transition: all 1s cubic-bezier(0.2, 1, 0.3, 1.3);
   transition: all 1s cubic-bezier(0.2, 1, 0.3, 1.3);
 }
 .about-section a:hover {

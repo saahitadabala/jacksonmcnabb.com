@@ -39,11 +39,15 @@ Research Css
   background: var(--card);
   width: 90%;
   text-align: left;
-  transition: all 0.4s ease-in-out;
   text-decoration: none;
   margin: auto;
   margin-bottom: 0.5em;
   color: var(--text-color);
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
 }
 .card-coloring-right {
   margin-top: 0.4em;
@@ -52,6 +56,10 @@ Research Css
   text-align: right;
   margin: auto;
   transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
   text-decoration: none;
   color: var(--text-color);
   margin-bottom: 0.5em;
@@ -66,6 +74,10 @@ Research Css
 }
 .research-card:hover {
   transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
   transform: scale(1.05, 1.05);
   z-index: 3;
   color: var(--blue);
@@ -76,27 +88,44 @@ Research Css
   width: 10em;
   opacity: 100%;
   transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
 }
 .research-image-not-active {
   height: 4.3em;
   width: 10em;
   opacity: 0%;
   transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
 }
 /*
 Footer Css
 */
 .container-footer {
   width: 100%;
+  text-align: center;
 }
 .footer {
   background: var(--card);
   transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 .footer-text {
   color: var(--text-color);
   margin: 0 2em;
-  transition: all 1s;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 
 .max-height {
@@ -108,9 +137,11 @@ Footer Css
   width: calc(100% - 300px);
   padding: 0 0;
   float: right;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
   transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
   color: white;
 }
 
@@ -120,11 +151,20 @@ Shrink
 @media screen and (max-width: 768px) {
   #main-container {
     width: 100%;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
   }
 }
 
 #app-container {
   transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
   margin: 0 auto;
 }
 
@@ -133,6 +173,10 @@ Shrink
 }
 .section-header {
   transition: 1s ease;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+  -ms-transition: 1s ease;
+  -o-transition: 1s ease;
   padding-top: 0.1em;
   padding-bottom: 0.1em;
   font-weight: 400;
@@ -165,11 +209,19 @@ Shrink
   font-size: 16pt;
   font-weight: 400;
   transition: 1s ease;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+  -ms-transition: 1s ease;
+  -o-transition: 1s ease;
   text-align: center;
   padding: 0 2em;
 }
 .app-base {
   transition: 1s ease;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+  -ms-transition: 1s ease;
+  -o-transition: 1s ease;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -177,6 +229,10 @@ Shrink
 }
 .card-coloring {
   transition: 1s ease;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+  -ms-transition: 1s ease;
+  -o-transition: 1s ease;
   background: var(--section-card);
   width: 95%;
   margin: auto;
@@ -188,6 +244,10 @@ Shrink
 /* Footer Element */
 .nav-footer-container {
   transition: 1s ease;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+  -ms-transition: 1s ease;
+  -o-transition: 1s ease;
 }
 .footer {
   /* width: 100%; */
