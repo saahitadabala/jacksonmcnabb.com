@@ -2,9 +2,6 @@ import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { themeLight, themeDark } from "./data/siteColoring";
-{
-  /*<nav className="nav nav-pills flex-column">*/
-}
 let siteText = require("./data/site-text.json");
 
 export default class Navbar extends Component {
@@ -76,7 +73,7 @@ export default class Navbar extends Component {
     // });
     var changeHeading = () => {
       var currentWindowHeight = window.scrollY;
-      if (currentWindowHeight != lastWindowHeight) {
+      if (currentWindowHeight !== lastWindowHeight) {
         lastWindowHeight = currentWindowHeight;
         var clientHeights = [0];
         /*Adds consecective heights in easy in clientHeights*/
