@@ -68,9 +68,6 @@ export default class Navbar extends Component {
       }
     });
 
-    // document.addEventListener("click", () => {
-
-    // });
     var changeHeading = () => {
       var currentWindowHeight = window.scrollY;
       if (currentWindowHeight !== lastWindowHeight) {
@@ -104,7 +101,7 @@ export default class Navbar extends Component {
       }
       //recurisively calls function every second to update heading depending on scrolling location
 
-      setTimeout(changeHeading, 500);
+      setTimeout(changeHeading, 350);
     };
     changeHeading();
   }
