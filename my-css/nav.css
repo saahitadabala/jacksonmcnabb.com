@@ -117,6 +117,7 @@ Controls hiding the nav panel time
   -moz-transition: 1s;
   -ms-transition: 1s;
   -o-transition: 1s;
+  scroll-behavior: smooth;
 }
 /* Underlining event*/
 #nav-aside-base #navbar-base ul li a:after {
