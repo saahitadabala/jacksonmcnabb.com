@@ -23,10 +23,10 @@ function App() {
         <Fade top>
           <Heading></Heading>
         </Fade>
-        <Fade bottom delay={1000}>
+        <Fade bottom>
           <About></About>
         </Fade>
-        <Fade bottom delay={2000}>
+        <Fade bottom>
           <Experience></Experience>{" "}
         </Fade>
         <Fade bottom>
