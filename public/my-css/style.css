@@ -271,7 +271,10 @@ Shrink
   text-decoration: none;
   color: var(--text-color);
 }
-.footer a#love-icon:hover {
+.footer span {
+  margin: 0.4em;
+}
+.footer span#love-icon:hover {
   text-decoration: none;
   color: rgb(255, 0, 200);
 }

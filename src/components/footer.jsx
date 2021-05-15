@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 export default class Footer extends Component {
   render() {
@@ -18,9 +18,9 @@ export default class Footer extends Component {
               <FontAwesomeIcon icon={["fab", "react"]} size="lg" />
             </a>
             and
-            <a id="love-icon">
+            <span id="love-icon">
               <FontAwesomeIcon icon={faHeart} size="lg" />
-            </a>
+            </span>
             at
             <a
               href="https://github.com/JacksonMcNabb/jacksonmcnabb.com"
